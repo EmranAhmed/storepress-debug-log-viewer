@@ -142,7 +142,7 @@
 			if ( file_exists( $file ) ) {
 				wp_delete_file( $file );
 			}
-			wp_safe_redirect( add_query_arg( array( 'page' => PAGE_SLUG, 'cleared' => '1' ), admin_url( 'tools.php' ) ) );
+			wp_safe_redirect( add_query_arg( array( 'page' => PAGE_SLUG, 'deleted' => '1' ), admin_url( 'tools.php' ) ) );
 			exit;
 		}
 		
@@ -184,7 +184,7 @@
         <div class="wrap">
             <h1><?php esc_html_e( 'Debug Log', 'storepress-debug-log-manager' ); ?></h1>
 			
-			<?php if ( isset( $_GET['cleared'] ) ) : // phpcs:ignore WordPress.Security.NonceVerification.Recommended ?>
+			<?php if ( isset( $_GET['deleted'] ) ) : // phpcs:ignore WordPress.Security.NonceVerification.Recommended ?>
                 <div class="notice notice-success is-dismissible"><p><?php esc_html_e( 'Debug log deleted.', 'storepress-debug-log-manager' ); ?></p></div>
 			<?php endif; ?>
 			
