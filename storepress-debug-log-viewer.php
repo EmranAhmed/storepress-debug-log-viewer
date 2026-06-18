@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * Plugin Name:       Debug Log Manager
+	 * Plugin Name:       StorePress Debug Log Viewer
 	 * Plugin URI:        https://storepress.com/
 	 * Description:       View and delete the WordPress debug.log from the admin panel, and block direct URL access to the log file.
 	 * Version:           1.0.0
